@@ -72,5 +72,8 @@
       "name": "Jeffrey Dungen"
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
 }

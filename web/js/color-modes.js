@@ -7,6 +7,8 @@
 (() => {
   'use strict'
 
+  const localStorage = window.localStorage
+
   const getStoredTheme = () => localStorage.getItem('theme')
   const setStoredTheme = theme => localStorage.setItem('theme', theme)
 
@@ -36,7 +38,6 @@
       return
     }
 
-    const themeSwitcherText = document.querySelector('#bd-theme-text')
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
 
     document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
